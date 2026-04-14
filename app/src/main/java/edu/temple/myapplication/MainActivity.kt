@@ -21,23 +21,37 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    }
 
-            menuInflater.inflate(R.menu.main, menu)
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 
-            return super.onCreateOptionsMenu(munu)
+        menuInflater.inflate(R.menu.main, menu)
+
+        return super.onCreateOptionsMenu(menu)
+    }
+
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when (item.itemId) {
+            R.id.action_start -> Toast.makeText(this, "Item 1 Selected", Toast.LENGTH_SHORT).show()
+            R.id.action_start2 -> Toast.makeText(this, "Item 2 Selected", Toast.LENGTH_SHORT).show()
+            R.id.action_start3 -> Toast.makeText(this, "Item 3 Selected", Toast.LENGTH_SHORT).show()
         }
 
+//        return when (item.itemId) {
+//            R.id.action_start -> {
+//                true
+//            }
+//            R.id.action_start2 -> {
+//                true
+//            }
+//            R.id.action_start3 -> {
+//                true
+//            }
+//            else -> false
+//        }
 
-        override fun onOptionsItemSelected(item: MenuItem): Boolean {
-
-            when (item.itemId) {
-                R.id.action_start -> Toast.makeText(this, "Item 1 Selected", Toast.LENGTH_SHORT).show()
-                R.id.action_start2 -> Toast.makeText(this, "Item 2 Selected", Toast.LENGTH_SHORT).show()
-                R.id.action_start3 -> Toast.makeText(this, "Item 3 Selected", Toast.LENGTH_SHORT).show()
-            }
-
-            return super.onOptionsItemSelected(item)
-        }
+        return super.onOptionsItemSelected(item)
     }
 }
