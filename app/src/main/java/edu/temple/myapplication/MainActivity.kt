@@ -54,4 +54,17 @@ class MainActivity : AppCompatActivity() {
 
         return super.onOptionsItemSelected(item)
     }
+
+//    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+//            R.id.action_start -> {
+//                true
+//            }
+//            R.id.action_start2 -> {
+//                true
+//            }
+//            R.id.action_start3 -> {
+//                true
+//            }
+//            else -> false
+//    }
 }
