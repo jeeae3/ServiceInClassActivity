@@ -87,3 +87,41 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
+//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//
+//        when (item.itemId) {
+//            R.id.action_start -> Toast.makeText(this, "Item 1 Selected", Toast.LENGTH_SHORT).show()
+//            R.id.action_start2 -> Toast.makeText(this, "Item 2 Selected", Toast.LENGTH_SHORT).show()
+//            R.id.action_start3 -> Toast.makeText(this, "Item 3 Selected", Toast.LENGTH_SHORT).show()
+//        }
+//
+////        return when (item.itemId) {
+////            R.id.action_start -> {
+////                true
+////            }
+////            R.id.action_start2 -> {
+////                true
+////            }
+////            R.id.action_start3 -> {
+////                true
+////            }
+////            else -> false
+////        }
+//
+//        return super.onOptionsItemSelected(item)
+//    }
+//
+////    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+////            R.id.action_start -> {
+////                true
+////            }
+////            R.id.action_start2 -> {
+////                true
+////            }
+////            R.id.action_start3 -> {
+////                true
+////            }
+////            else -> false
+////    }
+//}
